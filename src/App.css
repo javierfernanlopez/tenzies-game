@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  background: #0B2434;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background: #F5F5F5;
+  height: 90%;
+  width: 85%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 60px; 
+}
+
+.die {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10%;
+  height: 60px;
+  width: 60px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #2B283A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.gg-dice-1 {
+  display: block;
+  transform: scale(var(--ggs,2.5));
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #0B2434;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0B2434;
+  transition: ease-in-out 0.2s
+ }
+ 
+ .gg-dice-1::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  left:7px;
+  top:7px
+ } 
+ .gg-dice-2 {
+  display: block;
+  transform: scale(var(--ggs,2.5));
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0B2434;
+  transition: ease-in-out 0.2s
+ }
+ 
+ .gg-dice-2::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  left:2px;
+  top:2px;
+  box-shadow: 10px 10px 0;
+  
+ } 
+ .gg-dice-3 {
+  display: block;
+  transform: scale(var(--ggs,2.5));
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0B2434;
+  transition: ease-in-out 0.2s
+ }
+ 
+ .gg-dice-3::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  left:2px;
+  top:2px;
+  box-shadow:
+  5px 5px 0,
+  10px 10px 0
+ } 
+ .gg-dice-4 {
+  display: block;
+  transform: scale(var(--ggs,2.5));
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0B2434;
+  transition: ease-in-out 0.2s
+ }
+ 
+ .gg-dice-4::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  left:2px;
+  top:2px;
+  box-shadow:
+  0 10px 0,
+  10px 0 0,
+  10px 10px 0
+ } 
+ .gg-dice-5 {
+  display: block;
+  transform: scale(var(--ggs,2.5));
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0B2434;
+  transition: ease-in-out 0.2s
+ }
+ 
+ .gg-dice-5::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  left:2px;
+  top:2px;
+  box-shadow:
+  0 10px 0,
+  10px 0 0,
+  10px 10px 0,
+  5px 5px 0;
+ } 
+ .gg-dice-6 {
+  display: block;
+  transform: scale(var(--ggs,2.5));
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #0B2434;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0B2434;
+  transition: ease-in-out 0.2s
+ }
+ 
+ .gg-dice-6::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  left:2px;
+  top:2px;
+  box-shadow:
+  0 5px 0, 0 10px 0,
+  10px 0 0, 10px 5px 0,
+  10px 10px 0;
+  ;
+ } 
+
+ .gg-dice-1:hover,
+ .gg-dice-2:hover,
+ .gg-dice-3:hover,
+ .gg-dice-4:hover,
+ .gg-dice-5:hover,
+ .gg-dice-6:hover {
+    transform: scale(3);
+ }
+
+.roll-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  border: none;
+  padding: 20px 50px;
+  margin: 30px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: #5035FF;
+  box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+button:hover {
+
+  background-color : white ; 
+  color : #5035FF ; 
+
+} 
+
+
+
+.text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #0B2434;
+  align-items: center;
+  margin: 20px 50px;
+}
+@media (max-width: 600px) {
+  .grid-container {
+    gap: 45px;
+  }
+  .die{
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .grid-container {
+    gap: 15px;
+  }
+  .die{
+    height: 45px;
+    width: 45px;
+    font-size: 2rem;
+  }
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Karla', sans-serif;
+  margin: 10px;
+}
+
+.instructions {
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0;
+  text-align: center;
+}
+
+.timer{
+  position: absolute;
+  top: 70px;
+  right: 13%;
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.bestTime{
+  position: absolute;
+  top: 100px;
+  right: 13%;
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
